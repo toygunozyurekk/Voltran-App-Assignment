@@ -47,6 +47,14 @@ curl -X POST -F "file=@path/to/yourfile.pdf" localhost/v1/pdf
 curl -X POST -H "Content-Type: application/json" -d '{"message": "What is supervised learning?"}' localhost/v1/chat/1
 ```
 
+## Setup 
+
+- **Set Up Environment Variables**: Create a `.env` file in the project root and add your API keys:
+`OPENAI_API_KEY=your_openai_api_key
+PINECONE_API_KEY=your_pinecone_api_key
+PINECONE_ENVIRONMENT=your_pinecone_environment
+` 
+
 ## Usage 
 
 - **Upload a PDF**: using the `/v1/pdf` endpoint.
