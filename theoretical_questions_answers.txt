@@ -1,0 +1,35 @@
+Theoretical Questions and Answers
+
+1. What is fine-tuning in the context of LLMs, and why is it important?
+
+Answer:
+Fine-tuning in the context of Large Language Models (LLMs) refers to the process of taking a pre-trained model and training it further on a specific dataset to adapt it to a particular task or domain. This is important because it allows the model to specialize in a narrower field, improving its accuracy and relevance for specific tasks. Fine-tuning is essential when generic language models need to be customized for applications that require industry-specific jargon, unique user interaction styles, or specialized knowledge.
+
+2. How can you incorporate external knowledge into an LLM?
+
+Answer:
+Incorporating external knowledge into an LLM can be achieved through several methods:
+   - **Fine-tuning**: Training the model on a dataset that includes external knowledge.
+   - **Retrieval-Augmented Generation (RAG)**: Pairing the model with a retrieval system (e.g., a knowledge base or database) that can supply relevant information in response to a query.
+   - **Prompting Techniques**: Embedding external knowledge within prompts by providing detailed background information.
+   - **Hybrid Systems**: Combining LLMs with other structured data sources or APIs, enabling the model to call these resources when required.
+
+Each approach has its use case depending on the nature of the knowledge and the application requirements.
+
+3. Can you provide examples of different prompting techniques (zero-shot, few-shot, chain-of-thought) and explain when to use them?
+
+Answer:
+   - **Zero-shot prompting**: The model is asked to perform a task without any examples. This technique is best when the model is expected to understand the task purely based on the question or instruction. For example, “Translate the following sentence to French: ‘Hello, how are you?’”
+   - **Few-shot prompting**: The model is given a few examples of the task before being asked to perform it. This is useful when the task is complex or context-dependent, as it provides the model with guidance. For instance, giving examples of sentence correction before asking it to correct a new sentence.
+   - **Chain-of-thought prompting**: This technique involves prompting the model to break down a complex problem into steps or a logical sequence. It is especially useful for reasoning tasks where a step-by-step approach improves accuracy. An example would be: “To calculate the total, first add the numbers in this list, then divide by the count.”
+
+4. When should we use RAG over fine-tuning, and when should we use fine-tuning over RAG? Give examples.
+
+Answer:
+   - **Use RAG over fine-tuning** when the model needs access to a large, frequently updated knowledge base or when the task requires real-time information retrieval. RAG is suitable for applications like customer support, where responses should be based on an up-to-date knowledge base.
+   
+   - **Use fine-tuning over RAG** when the task requires the model to internalize specific knowledge or follow a particular style consistently. Fine-tuning is ideal for applications like sentiment analysis in a specific industry, where the model benefits from deep exposure to the domain data to perform well.
+
+In summary:
+   - **RAG Example**: A search engine assistant that uses external articles to answer user questions.
+   - **Fine-tuning Example**: A medical diagnosis model that has been fine-tuned on medical research data to improve diagnostic accuracy.

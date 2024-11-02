@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Environment variables
+*.env
+
+# macOS specific files
+.DS_Store
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Flask instance and cache folders
+instance/
+.cache
+
+# Uploads folder
+uploads/
+
+# Log files
+*.log
+logs/
+
+# Ignore Python-specific settings and IDE config files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
